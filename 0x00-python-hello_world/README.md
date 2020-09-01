@@ -1,0 +1,1 @@
+This directory contains all about my first project in holberton
