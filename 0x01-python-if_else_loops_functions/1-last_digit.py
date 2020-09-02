@@ -14,5 +14,5 @@ elif ldigit < 6 and ldigit != 0:
         print("Last digit of", number, "is", (ldigit * -1), string2)
     else:
         print("Last digit of", number, "is", ldigit, string2)
-else:
+elif ldigit == 0:
     print("Last digit of", number, "is", ldigit, "and is 0")
