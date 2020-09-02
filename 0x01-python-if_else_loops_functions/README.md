@@ -1,0 +1,1 @@
+This directory contains all the files about the 0x1 python project
