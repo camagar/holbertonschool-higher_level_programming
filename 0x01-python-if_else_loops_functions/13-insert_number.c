@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -10,7 +8,6 @@
 */
 listint_t *insert_node(listint_t **head, int number)
 {
-
 	listint_t *current = NULL;
 	int idx = 0;
 	int flag = 0;
@@ -26,7 +23,6 @@ listint_t *insert_node(listint_t **head, int number)
 	}
 	while (current != NULL)
 	{
-
 		if (number > current->n)
 		{
 			current = current->next;
