@@ -4,7 +4,7 @@ if __name__ == "__main__":
     Nargs = len(sys.argv)
     suma = 0
     if Nargs > 1:
-        for i in range (1, Nargs):
+        for i in range(1, Nargs):
             aux = int(sys.argv[i])
             suma += aux
         print("{:d}".format(suma))
