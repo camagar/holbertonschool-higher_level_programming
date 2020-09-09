@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
 def no_c(my_string):
-    i = my_string
-    return(i.translate({ord('c'): None, ord('C'): None}))
+    new_string = ""
+    for char in my_string:
+        if char != 'c' and char != 'C':
+            new_string += char
+    return (new_string)
