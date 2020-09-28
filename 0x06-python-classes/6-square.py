@@ -6,14 +6,14 @@ class Square:
     """This class that defines a square"""
     def __init__(self, size=0, position=(0, 0)):
         """size is private"""
-        """if type(size) is not int:
+        if type(size) is not int:
             raise TypeError("size must be an integer")
-        elif size < 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
-        if type(position) is not tuple or len(position) !=\
-           2 or type(position[0]) != int or\
-           type(position[0]) != int or position[0] < 0 or position[1] < 1:
-            raise TypeError("position must be a tuple of 2 positive integers")"""
+        if type(position) is not tuple or len(position) != 2 or\
+           type(position[0]) != int or type(position[1]) != int or\
+           position[0] < 0 or position[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
         self.__size = size
         self.__position = position
 
