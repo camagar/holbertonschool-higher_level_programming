@@ -3,7 +3,10 @@
 
 
 def write_file(filename="", text=""):
+    """function"""
+
     n = 0
-    with open(filename, mode="w", encoding="utf-8") as f:
-        n = f.write(text)
-    return (n)
+    with open(filename, "w") as my_file:
+        nb_char = my_file.write(str(text))
+    my_file.close()
+    return (nb_char)
