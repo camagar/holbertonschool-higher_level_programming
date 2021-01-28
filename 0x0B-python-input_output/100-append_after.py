@@ -1,31 +1,15 @@
 #!/usr/bin/python3
-""" inssert in an specific line"""
+""" Module to add text """
 
 
 def append_after(filename="", search_string="", new_string=""):
-    """append after
+    """param filename: name of file
     """
-
-    numoflines = 0
-    list1 = []
-    indices = []
-    flag = 0
-    with open(filename, "r", encoding="utf-8") as f:
-        contenido = f.readlines()
-        f.seek(0)
-        while True:
-            line = f.readline()
-            if not line:
-                break
-            numoflines += 1
-            list1 = line.split()
-            for word in list1:
-                if search_string in word:
-                    if flag == 0:
-                        contenido.insert(numoflines, new_string)
-                        flag = 1
-                    else:
-                        contenido.insert(numoflines + 1, new_string)
-    with open(filename, mode="w", encoding="utf-8") as f:
-        contenido = "".join(contenido)
-        f.write(contenido)
+    with open(filename, "r") as f:
+        string = ""
+        for i in f:
+            string += i
+            if search_string in i:
+                string += new_string
+    with open(filename, "w") as f:
+        f.write(string)
