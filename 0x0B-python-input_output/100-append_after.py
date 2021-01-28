@@ -3,6 +3,7 @@
 
 
 def append_after(filename="", search_string="", new_string=""):
+    """append after"""
     numoflines = 0
     list1 = []
     indices = []
