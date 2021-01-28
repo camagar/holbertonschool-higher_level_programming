@@ -3,12 +3,14 @@
 
 
 def append_after(filename="", search_string="", new_string=""):
-    """append after"""
+    """append after
+    """
+
     numoflines = 0
     list1 = []
     indices = []
     flag = 0
-    with open(filename, encoding="utf-8") as f:
+    with open(filename, "r", encoding="utf-8") as f:
         contenido = f.readlines()
         f.seek(0)
         while True:
